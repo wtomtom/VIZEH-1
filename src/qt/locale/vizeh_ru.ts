@@ -1555,9 +1555,9 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/wtomtom/wtomtom-translations</source>
+https://www.transifex.com/VIZEH-PROJECT/VIZEH-PROJECT-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/wtomtom/wtomtom-translations</translation>
+https://www.transifex.com/VIZEH-PROJECT/VIZEH-PROJECT-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>

@@ -476,7 +476,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/wtomtom/wtomtom-translations</string>
+https://www.transifex.com/VIZEH-PROJECT/VIZEH-PROJECT-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>

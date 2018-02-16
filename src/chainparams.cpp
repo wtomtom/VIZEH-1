@@ -45,7 +45,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	(0, uint256("0x00000b4e22d615eb5ffaa7087ef1dba4e0e1dd3e46c8235c7a4a8088d61bf12e"));
+	(0, uint256("0x00000554be8a1b16e08e24faeb3b56b538495e8ad1a989ce8dc1ba7bb7925e22"));
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -55,14 +55,14 @@ static const Checkpoints::CCheckpointData data = {
     2000        // * estimated number of transactions per day after checkpoint
 };
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("0x00000554be8a1b16e08e24faeb3b56b538495e8ad1a989ce8dc1ba7bb7925e22"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1454124731,
     0,
     250};
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("0x00000554be8a1b16e08e24faeb3b56b538495e8ad1a989ce8dc1ba7bb7925e22"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1454124731,
@@ -84,15 +84,15 @@ public:
         pchMessageStart[1] = 0x55;
         pchMessageStart[2] = 0x0a;
         pchMessageStart[3] = 0x5a;
-        vAlertPubKey = ParseHex("04a7d596778878cc670967d4d2488805f17938fb18937c2826131aff059a9dfa8345a777129607d28d62ab082168e8bb7c1c6457a22cb2b32b23082e457aa1bf93");
+        vAlertPubKey = ParseHex("048a433c16ea5e3203252a55b5e1b1bb0139174066713b57fab6c05b1ddfaa094f199305001b67e5e73da669fe7ce9bc64e777688cabeef1549cd427c85e1b5700");
         nDefaultPort = 65020;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // vizeh starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // vizeh: 1 minute
-        nTargetSpacing = 1 * 60;  // vizeh: 1 minute
-        nLastPOWBlock = 150;
+        nTargetTimespan = 60; // vizeh: 1 minute
+        nTargetSpacing = 60;  // vizeh: 1 minute
+        nLastPOWBlock = 5000;
         nMaturity = 50;
         nModifierUpdateBlock = 1;
         const char* pszTimestamp = "VIZEH NEXT MONEY REVOLUTION";
@@ -101,18 +101,18 @@ public:
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 0 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04a7d596778878cc670967d4d2488805f17938fb18937c2826131aff059a9dfa8345a777129607d28d62ab082168e8bb7c1c6457a22cb2b32b23082e457aa1bf93") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("048a433c16ea5e3203252a55b5e1b1bb0139174066713b57fab6c05b1ddfaa094f199305001b67e5e73da669fe7ce9bc64e777688cabeef1549cd427c85e1b5700") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1516748672;
+        genesis.nTime = 1518787481;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 21131915;
+        genesis.nNonce = 20563667;
         hashGenesisBlock = genesis.GetHash();
 		
-        assert(hashGenesisBlock == uint256("0x00000b4e22d615eb5ffaa7087ef1dba4e0e1dd3e46c8235c7a4a8088d61bf12e"));
-        assert(genesis.hashMerkleRoot == uint256("0xdf68954ceeae2838f9c6cbfe1d301b0b881d09b9d5e47658cc54674d4198aa17"));
+        assert(hashGenesisBlock == uint256("0x00000554be8a1b16e08e24faeb3b56b538495e8ad1a989ce8dc1ba7bb7925e22"));
+        assert(genesis.hashMerkleRoot == uint256("0xd5f89b250067e9e3b6639e6f503e91f59a40b5e9d19135db80ff854014a8ae39"));
 		
         vSeeds.push_back(CDNSSeedData("0", "35.196.202.22"));
         vSeeds.push_back(CDNSSeedData("1", "35.229.123.206"));
@@ -136,7 +136,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
         nPoolMaxTransactions = 3;
-        strSporkKey = "04a7d596778878cc670967d4d2488805f17938fb18937c2826131aff059a9dfa8345a777129607d28d62ab082168e8bb7c1c6457a22cb2b32b23082e457aa1bf93";
+        strSporkKey = "048a433c16ea5e3203252a55b5e1b1bb0139174066713b57fab6c05b1ddfaa094f199305001b67e5e73da669fe7ce9bc64e777688cabeef1549cd427c85e1b5700";
         
         strObfuscationPoolDummyAddress = "VTHprUHgceGPTTaAmajjcELftpUTKNhyJt";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT

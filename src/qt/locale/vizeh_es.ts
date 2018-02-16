@@ -1735,9 +1735,9 @@ Por favor compruebe la dirección e inténtelo de nuevo.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/wtomtom/wtomtom-translations</source>
+https://www.transifex.com/VIZEH-PROJECT/VIZEH-PROJECT-translations</source>
         <translation>¿Falta su lenguaje o la traducción está incompleta? Contribuya con las traducciones aquí:
-https://www.transifex.com/wtomtom/wtomtom-translations</translation>
+https://www.transifex.com/VIZEH-PROJECT/VIZEH-PROJECT-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>

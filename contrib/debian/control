@@ -23,8 +23,8 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
 Homepage: http://www.vizeh.pw
-Vcs-Git: git://github.com/wtomtom/vizeh.git
-Vcs-Browser: http://github.com/wtomtom/vizeh
+Vcs-Git: git://github.com/VIZEH-PROJECT/vizeh.git
+Vcs-Browser: http://github.com/VIZEH-PROJECT/vizeh
 
 Package: vizehd
 Architecture: any
