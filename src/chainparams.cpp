@@ -49,20 +49,20 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1516748672, // * UNIX timestamp of last checkpoint block
-    2,    // * total number of transactions between genesis and last checkpoint
+    1518787481, // * UNIX timestamp of last checkpoint block
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x00000554be8a1b16e08e24faeb3b56b538495e8ad1a989ce8dc1ba7bb7925e22"));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1454124731,
     0,
     250};
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x00000554be8a1b16e08e24faeb3b56b538495e8ad1a989ce8dc1ba7bb7925e22"));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1454124731,
@@ -90,8 +90,8 @@ public:
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 60; // vizeh: 1 minute
-        nTargetSpacing = 60;  // vizeh: 1 minute
+        nTargetTimespan = 1 * 60; // vizeh: 1 minute
+        nTargetSpacing = 1 * 60;  // vizeh: 1 minute
         nLastPOWBlock = 5000;
         nMaturity = 50;
         nModifierUpdateBlock = 1;
@@ -114,8 +114,8 @@ public:
         assert(hashGenesisBlock == uint256("0x00000554be8a1b16e08e24faeb3b56b538495e8ad1a989ce8dc1ba7bb7925e22"));
         assert(genesis.hashMerkleRoot == uint256("0xd5f89b250067e9e3b6639e6f503e91f59a40b5e9d19135db80ff854014a8ae39"));
 		
-        vSeeds.push_back(CDNSSeedData("0", "35.196.202.22"));
-        vSeeds.push_back(CDNSSeedData("1", "35.229.123.206"));
+        vSeeds.push_back(CDNSSeedData("35.196.202.22", "35.196.202.22"));
+        vSeeds.push_back(CDNSSeedData("35.229.123.206", "35.229.123.206"));
 		
 		
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 70);
