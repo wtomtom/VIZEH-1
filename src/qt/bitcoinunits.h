@@ -60,8 +60,8 @@ public:
      */
     enum Unit {
         VZH,
-        mVSX,
-        uVSX
+        mVZH,
+        uVZH
     };
 
     enum SeparatorStyle {

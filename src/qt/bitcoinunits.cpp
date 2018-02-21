@@ -21,8 +21,8 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
     unitlist.append(VZH);
-    unitlist.append(mVSX);
-    unitlist.append(uVSX);
+    unitlist.append(mVZH);
+    unitlist.append(uVZH);
     return unitlist;
 }
 
@@ -30,8 +30,8 @@ bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
     case VZH:
-    case mVSX:
-    case uVSX:
+    case mVZH:
+    case uVZH:
         return true;
     default:
         return false;
@@ -43,9 +43,9 @@ QString BitcoinUnits::id(int unit)
     switch (unit) {
     case VZH:
         return QString("vizeh");
-    case mVSX:
+    case mVZH:
         return QString("mvizeh");
-    case uVSX:
+    case uVZH:
         return QString::fromUtf8("uvizeh");
     default:
         return QString("???");
@@ -58,21 +58,21 @@ QString BitcoinUnits::name(int unit)
         switch (unit) {
         case VZH:
             return QString("VZH");
-        case mVSX:
-            return QString("mVSX");
-        case uVSX:
-            return QString::fromUtf8("μVSX");
+        case mVZH:
+            return QString("mVZH");
+        case uVZH:
+            return QString::fromUtf8("μVZH");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
         case VZH:
-            return QString("tVSX");
-        case mVSX:
-            return QString("mtVSX");
-        case uVSX:
-            return QString::fromUtf8("μtVSX");
+            return QString("tVZH");
+        case mVZH:
+            return QString("mtVZH");
+        case uVZH:
+            return QString::fromUtf8("μtVZH");
         default:
             return QString("???");
         }
@@ -85,9 +85,9 @@ QString BitcoinUnits::description(int unit)
         switch (unit) {
         case VZH:
             return QString("VZH");
-        case mVSX:
+        case mVZH:
             return QString("Milli-VZH (1 / 1" THIN_SP_UTF8 "000)");
-        case uVSX:
+        case uVZH:
             return QString("Micro-VZH (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
@@ -95,11 +95,11 @@ QString BitcoinUnits::description(int unit)
     } else {
         switch (unit) {
         case VZH:
-            return QString("TestVSXs");
-        case mVSX:
-            return QString("Milli-TestVSX (1 / 1" THIN_SP_UTF8 "000)");
-        case uVSX:
-            return QString("Micro-TestVSX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("TestVZHs");
+        case mVZH:
+            return QString("Milli-TestVZH (1 / 1" THIN_SP_UTF8 "000)");
+        case uVZH:
+            return QString("Micro-TestVZH (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -111,9 +111,9 @@ qint64 BitcoinUnits::factor(int unit)
     switch (unit) {
     case VZH:
         return 100000000;
-    case mVSX:
+    case mVZH:
         return 100000;
-    case uVSX:
+    case uVZH:
         return 100;
     default:
         return 100000000;
@@ -125,9 +125,9 @@ int BitcoinUnits::decimals(int unit)
     switch (unit) {
     case VZH:
         return 8;
-    case mVSX:
+    case mVZH:
         return 5;
-    case uVSX:
+    case uVZH:
         return 2;
     default:
         return 0;

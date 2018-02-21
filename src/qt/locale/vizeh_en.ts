@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>vizeh will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VSXs from being stolen by malware infecting your computer.</source>
+        <source>vizeh will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VZHs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3657,12 +3657,12 @@ https://www.transifex.com/VIZEH-PROJECT/VIZEH-PROJECT-translations</source>
     </message>
     <message>
         <location line="-165"/>
-        <source>If the custom fee is set to 1000 uVSXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uVSXs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uVSXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uVZHs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uVZHs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uVZHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uVSXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uVSXs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uVSXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uVZHs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uVZHs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uVZHs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

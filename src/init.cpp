@@ -1597,8 +1597,8 @@ bool AppInit2(boost::thread_group& threadGroup)
        is convertable to another.
 
        For example:
-       1VSX+1000 == (.1VSX+100)*10
-       10VSX+10000 == (1VSX+1000)*10
+       1VZH+1000 == (.1VZH+100)*10
+       10VZH+10000 == (1VZH+1000)*10
     */
     obfuScationDenominations.push_back((10000 * COIN) + 10000000);
     obfuScationDenominations.push_back((1000 * COIN) + 1000000);

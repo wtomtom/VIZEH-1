@@ -176,8 +176,8 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>vizeh will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VSXs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer VSXs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>vizeh will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VZHs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer VZHs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -185,7 +185,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VZH&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre VSXs verlieren&lt;/b&gt;!</translation>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre VZHs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -1456,7 +1456,7 @@ Adresse: %4</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>VSXs überweisen</translation>
+        <translation>VZHs überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1938,7 +1938,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte VSXs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine VSXs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte VZHs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine VZHs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2304,7 +2304,7 @@ Adresse: %4</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>VSXs überweisen</translation>
+        <translation>VZHs überweisen</translation>
     </message>
     <message>
         <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 VZH.</source>

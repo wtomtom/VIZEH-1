@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_STREVSX_H
-#define BITCOIN_STREVSX_H
+#ifndef BITCOIN_STREVZH_H
+#define BITCOIN_STREVZH_H
 
 #include "allocators.h"
 #include "serialize.h"
@@ -564,4 +564,4 @@ public:
     }
 };
 
-#endif // BITCOIN_STREVSX_H
+#endif // BITCOIN_STREVZH_H

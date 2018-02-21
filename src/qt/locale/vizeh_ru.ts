@@ -160,7 +160,7 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>vizeh will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VSXs from being stolen by malware infecting your computer.</source>
+        <source>vizeh will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your VZHs from being stolen by malware infecting your computer.</source>
         <translation>vizeh сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши vizeh от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>

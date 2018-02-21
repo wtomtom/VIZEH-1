@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHAINPARVSX_H
-#define BITCOIN_CHAINPARVSX_H
+#ifndef BITCOIN_CHAINPARVZH_H
+#define BITCOIN_CHAINPARVZH_H
 
 #include "chainparamsbase.h"
 #include "checkpoints.h"
@@ -168,4 +168,4 @@ void SelectParams(CBaseChainParams::Network network);
  */
 bool SelectParamsFromCommandLine();
 
-#endif // BITCOIN_CHAINPARVSX_H
+#endif // BITCOIN_CHAINPARVZH_H
