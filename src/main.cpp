@@ -1621,25 +1621,25 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 1 * COIN;
     } else if (nHeight < 1000 && nHeight >= 501) {
         nSubsidy = 1 * COIN;
-    } else if (nHeight <= Params().LAST_POW_BLOCK() && nHeight >= 151200) {
+    } else if (nHeight <= Params().LAST_POW_BLOCK() && nHeight >= 1001) {
         nSubsidy = 1 * COIN;
     } else if (nHeight <= 2000 && nHeight > Params().LAST_POW_BLOCK()) {
         nSubsidy = 1 * COIN;
-    } else if (nHeight <= 5000 && nHeight >= 2000) {
+    } else if (nHeight <= 5000 && nHeight >= 2001) {
         nSubsidy = 1 * COIN;
-    } else if (nHeight <= 15000 && nHeight >= 5000) {
+    } else if (nHeight <= 15000 && nHeight >= 5001) {
         nSubsidy = 1 * COIN;
-    } else if (nHeight <= 25000 && nHeight >= 15000) {
+    } else if (nHeight <= 25000 && nHeight >= 15001) {
         nSubsidy = 1 * COIN;
-    } else if (nHeight <= 35000 && nHeight >= 25000) {
+    } else if (nHeight <= 35000 && nHeight >= 25001) {
         nSubsidy = 1 * COIN;
-    } else if (nHeight <= 45000 && nHeight >= 35000) {
+    } else if (nHeight <= 45000 && nHeight >= 35001) {
         nSubsidy = 1 * COIN;
-    } else if (nHeight <= 55000 && nHeight >= 45000) {
+    } else if (nHeight <= 55000 && nHeight >= 45001) {
         nSubsidy = 1 * COIN;
-    } else if (nHeight <= 65000 && nHeight >= 55000) {
+    } else if (nHeight <= 65000 && nHeight >= 55001) {
         nSubsidy = 1 * COIN;
-    } else if (nHeight <= 75000 && nHeight >= 65000) {
+    } else if (nHeight <= 75000 && nHeight >= 65001) {
         nSubsidy = 1 * COIN;
     } else if (nHeight >= 85000) {
         nSubsidy = 1 * COIN;
@@ -1665,9 +1665,9 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         ret = blockValue / 2;
     } else if (nHeight < 500 && nHeight > 201) {
         ret = blockValue / (100 / 1);
-    } else if (nHeight < 10000 && nHeight >= 5000) {
+    } else if (nHeight < 2000 && nHeight >= 1001) {
         ret = blockValue / 2;
-    } else if (nHeight <= Params().LAST_POW_BLOCK() && nHeight >= 150000) {
+    } else if (nHeight <= Params().LAST_POW_BLOCK() && nHeight >= 2001) {
         ret = blockValue / 2;
     } else if (nHeight > Params().LAST_POW_BLOCK()) {
         int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
